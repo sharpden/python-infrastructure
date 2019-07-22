@@ -1,0 +1,114 @@
+id,localized_name,name,roles,attack,type
+1,Anti-Mage,antimage,Carry Escape Nuker,melee,agility
+2,Axe,axe,Initiator Durable Disabler Jungler,melee,strength
+3,Bane,bane,Support Disabler Nuker Durable,range,intelligence
+4,Bloodseeker,bloodseeker,Carry Disabler Jungler Nuker Initiator,melee,agility
+5,Crystal Maiden,crystal_maiden,Support Disabler Nuker Jungler,range,intelligence
+6,Drow Ranger,drow_ranger,Carry Disabler Pusher,range,agility
+7,Earthshaker,earthshaker,Support Initiator Disabler Nuker,melee,strength
+8,Juggernaut,juggernaut,Carry Pusher Escape,melee,agility
+9,Mirana,mirana,Carry Support Escape Nuker Disabler,range,agility
+11,Shadow Fiend,nevermore,Carry Nuker,range,agility
+10,Morphling,morphling,Carry Escape Durable Nuker Disabler,range,agility
+12,Phantom Lancer,phantom_lancer,Carry Escape Pusher Nuker,melee,agility
+13,Puck,puck,Initiator Disabler Escape Nuker,range,intelligence
+14,Pudge,pudge,Disabler Initiator Durable Nuker,melee,strength
+15,Razor,razor,Carry Durable Nuker Pusher,range,agility
+16,Sand King,sand_king,Initiator Disabler Nuker Escape Jungler,melee,strength
+17,Storm Spirit,storm_spirit,Carry Escape Nuker Initiator Disabler,range,intelligence
+18,Sven,sven,Carry Disabler Initiator Durable Nuker,melee,strength
+19,Tiny,tiny,Carry Nuker Pusher Initiator Durable Disabler,melee,strength
+20,Vengeful Spirit,vengefulspirit,Support Initiator Disabler Nuker Escape,range,agility
+21,Windranger,windrunner,Carry Support Disabler Escape Nuker,range,intelligence
+22,Zeus,zuus,Nuker,range,intelligence
+23,Kunkka,kunkka,Carry Disabler Initiator Durable Nuker,melee,strength
+25,Lina,lina,Support Carry Nuker Disabler,range,intelligence
+31,Lich,lich,Support Nuker,range,intelligence
+26,Lion,lion,Support Disabler Nuker Initiator,range,intelligence
+27,Shadow Shaman,shadow_shaman,Support Pusher Disabler Nuker Initiator,range,intelligence
+28,Slardar,slardar,Carry Durable Initiator Disabler Escape,melee,strength
+29,Tidehunter,tidehunter,Initiator Durable Disabler Nuker,melee,strength
+30,Witch Doctor,witch_doctor,Support Nuker Disabler,range,intelligence
+32,Riki,riki,Carry Escape Disabler,melee,agility
+33,Enigma,enigma,Disabler Jungler Initiator Pusher,range,intelligence
+34,Tinker,tinker,Carry Nuker Pusher,range,intelligence
+35,Sniper,sniper,Carry Nuker,range,agility
+36,Necrophos,necrolyte,Carry Nuker Durable Disabler,range,intelligence
+37,Warlock,warlock,Support Initiator Disabler,range,intelligence
+38,Beastmaster,beastmaster,Initiator Disabler Durable Nuker,melee,strength
+39,Queen of Pain,queenofpain,Carry Nuker Escape,range,intelligence
+40,Venomancer,venomancer,Support Nuker Initiator Pusher Disabler,range,agility
+41,Faceless Void,faceless_void,Carry Initiator Disabler Escape Durable,melee,agility
+42,Skeleton King,skeleton_king,Carry Support Durable Disabler Initiator,melee,strength
+43,Death Prophet,death_prophet,Carry Pusher Nuker Disabler,range,intelligence
+44,Phantom Assassin,phantom_assassin,Carry Escape,melee,agility
+45,Pugna,pugna,Nuker Pusher,range,intelligence
+46,Templar Assassin,templar_assassin,Carry Escape,range,agility
+47,Viper,viper,Carry Durable Initiator Disabler,range,agility
+48,Luna,luna,Carry Nuker Pusher,range,agility
+49,Dragon Knight,dragon_knight,Carry Pusher Durable Disabler Initiator Nuker,melee,strength
+50,Dazzle,dazzle,Support Nuker Disabler,range,intelligence
+51,Clockwerk,rattletrap,Initiator Disabler Durable Nuker,melee,strength
+52,Leshrac,leshrac,Carry Support Nuker Pusher Disabler,range,intelligence
+53,Nature's Prophet,furion,Carry Jungler Pusher Escape Nuker,range,intelligence
+54,Lifestealer,life_stealer,Carry Durable Jungler Escape Disabler,melee,strength
+55,Dark Seer,dark_seer,Initiator Jungler Escape Disabler,melee,intelligence
+56,Clinkz,clinkz,Carry Escape Pusher,range,agility
+57,Omniknight,omniknight,Support Durable Nuker,melee,strength
+58,Enchantress,enchantress,Support Jungler Pusher Durable Disabler,range,intelligence
+59,Huskar,huskar,Carry Durable Initiator,range,strength
+60,Night Stalker,night_stalker,Carry Initiator Durable Disabler Nuker,melee,strength
+61,Broodmother,broodmother,Carry Pusher Escape Nuker,melee,agility
+62,Bounty Hunter,bounty_hunter,Escape Nuker,melee,agility
+63,Weaver,weaver,Carry Escape,range,agility
+64,Jakiro,jakiro,Support Nuker Pusher Disabler,range,intelligence
+65,Batrider,batrider,Initiator Jungler Disabler Escape,range,intelligence
+66,Chen,chen,Support Jungler Pusher,range,intelligence
+67,Spectre,spectre,Carry Durable Escape,melee,agility
+69,Doom,doom_bringer,Carry Disabler Initiator Durable Nuker,melee,strength
+68,Ancient Apparition,ancient_apparition,Support Disabler Nuker,range,intelligence
+70,Ursa,ursa,Carry Jungler Durable Disabler,melee,agility
+71,Spirit Breaker,spirit_breaker,Carry Initiator Disabler Durable Escape,melee,strength
+72,Gyrocopter,gyrocopter,Carry Nuker Disabler,range,agility
+73,Alchemist,alchemist,Carry Support Durable Disabler Initiator Nuker,melee,strength
+74,Invoker,invoker,Carry Nuker Disabler Escape Pusher,range,intelligence
+75,Silencer,silencer,Carry Support Disabler Initiator Nuker,range,intelligence
+76,Outworld Devourer,obsidian_destroyer,Carry Nuker Disabler,range,intelligence
+77,Lycanthrope,lycan,Carry Pusher Jungler Durable Escape,melee,strength
+78,Brewmaster,brewmaster,Carry Initiator Durable Disabler Nuker,melee,strength
+79,Shadow Demon,shadow_demon,Support Disabler Initiator Nuker,range,intelligence
+80,Lone Druid,lone_druid,Carry Pusher Jungler Durable,range,agility
+81,Chaos Knight,chaos_knight,Carry Disabler Durable Pusher Initiator,melee,strength
+82,Meepo,meepo,Carry Escape Nuker Disabler Initiator Pusher,melee,agility
+83,Treant Protector,treant,Support Initiator Durable Disabler Escape,melee,strength
+84,Ogre Magi,ogre_magi,Support Nuker Disabler Durable Initiator,melee,intelligence
+85,Undying,undying,Support Durable Disabler Nuker,melee,strength
+86,Rubick,rubick,Support Disabler Nuker,range,intelligence
+87,Disruptor,disruptor,Support Disabler Nuker Initiator,range,intelligence
+88,Nyx Assassin,nyx_assassin,Disabler Nuker Initiator Escape,melee,agility
+89,Naga Siren,naga_siren,Carry Support Pusher Disabler Initiator Escape,melee,agility
+90,Keeper of the Light,keeper_of_the_light,Support Nuker Disabler Jungler,range,intelligence
+91,Wisp,wisp,Support Escape Nuker,range,strength
+92,Visage,visage,Support Nuker Durable Disabler Pusher,range,intelligence
+93,Slark,slark,Carry Escape Disabler Nuker,melee,agility
+94,Medusa,medusa,Carry Disabler Durable,range,agility
+95,Troll Warlord,troll_warlord,Carry Pusher Disabler Durable,range,agility
+96,Centaur Warrunner,centaur,Durable Initiator Disabler Nuker Escape,melee,strength
+97,Magnus,magnataur,Initiator Disabler Nuker Escape,melee,strength
+98,Timbersaw,shredder,Nuker Durable Escape,melee,strength
+99,Bristleback,bristleback,Carry Durable Initiator Nuker,melee,strength
+100,Tusk,tusk,Initiator Disabler Nuker,melee,strength
+101,Skywrath Mage,skywrath_mage,Support Nuker Disabler,range,intelligence
+102,Abaddon,abaddon,Support Carry Durable,melee,strength
+103,Elder Titan,elder_titan,Initiator Disabler Nuker Durable,melee,strength
+104,Legion Commander,legion_commander,Carry Disabler Initiator Durable Nuker,melee,strength
+106,Ember Spirit,ember_spirit,Carry Escape Nuker Disabler Initiator,melee,agility
+107,Earth Spirit,earth_spirit,Nuker Escape Disabler Initiator Durable,melee,strength
+108,Abyssal Underlord,abyssal_underlord,Disabler Durable Nuker Support,melee,strength
+109,Terrorblade,terrorblade,Carry Pusher Nuker,melee,agility
+110,Phoenix,phoenix,Support Nuker Initiator Escape Disabler,range,strength
+105,Techies,techies,Nuker Disabler,range,intelligence
+111,Oracle,oracle,Support Nuker Disabler Escape,range,intelligence
+112,Winter Wyvern,winter_wyvern,Support Disabler Nuker,range,intelligence
+113,Arc Warden,npc_dota_hero_arc_warden,Carry Escape Nuker,range,agility
+24,X24_hero,X24_hero,Carry,range,agility

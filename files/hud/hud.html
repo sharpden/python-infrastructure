@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="jquery-1.5.2.min.js"></script>
+<script src="raphael-1.5.2.min.js" type="text/javascript" charset="utf-8"></script> 
+<style>
+* {user-select: none;}
+body { height: 99%; background: url('logo.png') no-repeat top left; }
+body, table { font: 16pt 'verdana'; color: white; }
+h1 {font: 28pt 'georgia'; margin-top: 0px; }
+div.menuitem { padding: 5px 10px 5px 10px; background: gray; margin-bottom: 2px; opacity: 0.7; width: 200px; }
+div.menuitem:hover { background: #800000; }
+div.on {background: olive;}
+div.on:hover {background: olive;}
+
+table td { vertical-align: top; }
+table td.todo { font-size: 8pt; }
+
+#head { background: rgba(128, 128, 128, 0.7); position: fixed; top: 0; left: 0; right: 0; }
+</style>
+<script type="text/javascript">
+
+function extend(obj, src) {
+    Object.keys(src).forEach(function(key) { obj[key] = src[key]; });
+    return obj;
+}
+
+var isStandalone = navigator.userAgent.search('Qt') == -1 && navigator.userAgent.search('python') == -1;
+
+function HostBridgeInit()
+{
+	console.log('HostBridgeInit');
+	$('#state').html(JSON.stringify(HostBridge.getConfig()));
+	HostBridge.updateConfig.connect(function(update) {
+		console.log('client updateConfig event');
+		document.getElementById('state').innerHTML = JSON.stringify(HostBridge.getConfig());
+	});
+	$('#state').click(function() {
+		var config = HostBridge.getConfig();
+		HostBridge.setConfig({'some': config['some'] == 'cook' ? 'phong' : 'cook'});
+	});
+}
+
+$(function() {
+	console.log('isStandalone = ' + isStandalone);
+	
+	if (isStandalone) {
+		console.log('using mock HostBridge');
+		HostBridge = {
+			config: {'some': 'cook'},
+			updateConfig_callback: function(upd) { },
+			getConfig: function() {
+				return HostBridge.config;
+			},
+			setConfig: function(upd) {
+				HostBridge.config = extend(HostBridge.config, upd);
+				HostBridge.updateConfig_callback(upd);
+			},
+			updateConfig: {
+				connect: function(callback) {
+					HostBridge.updateConfig_callback = callback;
+				}
+			}
+		};
+		HostBridgeInit();
+	} else {
+		console.log('HostBridgeInit will be called by host');
+	}
+
+	$('#agent').html(navigator.userAgent);
+	if (isStandalone) {
+		$('body').css('background-color', '#008000');
+	}
+	$('div.menuitem').click(function() {
+		$(this).toggleClass('on');
+	});
+});
+</script>
+
+</head>
+<body onselectstart="javascript: return(false);">
+<div id="head">$ 1000  + 500  * 250  F 1112</div>
+
+<h1>Замечательная игра!!!111</h1>
+<div id="state">[]</div>
+<input type="text">
+<p style="font-size: 9pt" id="agent"></p>
+<table>
+<tr><td>
+<div class="menuitem">Новая игра</div>
+<div class="menuitem">Загрузить</div>
+<div class="menuitem">Юплей</div>
+<div class="menuitem">Настройки</div>
+<div class="menuitem">Выход</div>
+<div id="holder"></div> 
+</td><td class="todo">
+<div id="info"></div>
+<div id="info2"></div>
+<div id="info3"></div>
+<button onclick="alert('hello there!')">alert</button>
+<a href="https://google.com">гугл</a>
+</td></tr>
+</table>
+<img src="anim.gif" style="position: absolute; right: 0px; top: 0px;" />
+
+
+<script type="text/javascript" charset="utf-8"> 
+Raphael.fn.ball = function (x, y, r, hue) {
+	hue = hue || 0;
+	return this.set(
+		this.ellipse(x, y + r - r / 5, r, r / 2).attr({fill: "rhsb(" + hue + ", 1, .25)-hsb(" + hue + ", 1, .25)", stroke: "none", opacity: 0}),
+		this.ellipse(x, y, r, r).attr({fill: "r(.5,.9)hsb(" + hue + ", 1, .75)-hsb(" + hue + ", .5, .25)", stroke: "none"}),
+		this.ellipse(x, y, r - r / 5, r - r / 20).attr({stroke: "none", fill: "r(.5,.1)#ccc-#ccc", opacity: 0})
+	);
+};
+window.onload = function () {
+	var R = Raphael("holder"), x = 50, y = 50, r = 50;
+	R.ball(x, y, r, Math.random());
+};
+</script> 
+
+
+</body>
+</html>
